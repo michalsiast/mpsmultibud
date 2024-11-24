@@ -29,7 +29,7 @@
                             <td>#</td>
                             <td></td>
                             <td>{{__('admin.offer.title')}}</td>
-                            <td>Kategoria</td>
+{{--                            <td>Kategoria</td>--}}
                             <td>{{__('admin.active')}}</td>
                             <td></td>
                         </tr>
@@ -53,7 +53,7 @@
                                         </small>
                                     @endif
                                 </td>
-                                <td>{!! $offer->category->title ?? '' !!}</td>
+{{--                                <td>{!! $offer->category->title ?? '' !!}</td>--}}
                                 <td>
                                     <input type="checkbox" class="status-switch" data-source_table="offer" data-source_id="{{$offer->id}}" {{$offer->active ? 'checked' : ''}}>
                                 </td>

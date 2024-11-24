@@ -29,7 +29,7 @@
                             <td>#</td>
                             <td></td>
                             <td>{{__('admin.article.title')}}</td>
-                            <td>Kategoria</td>
+{{--                            <td>Kategoria</td>--}}
                             <td>{{__('admin.active')}}</td>
                             <td></td>
                         </tr>
@@ -45,15 +45,15 @@
                                 </td>
                                 <td>
                                     {{$article->title}}
-                                    @if(isset($article->seo))
-                                        <small style="display: block">
-                                            <a @if($article->active) target="_blank" @else style="color: grey; opacity: .75" @endif href="@if($article->active){{url()->to('')}}{{$article->seo->url}}@else#@endif">
-                                                {{str_replace(['https://', 'http://'], '', url()->to(''))}}{{$article->seo->url}}
-                                            </a>
-                                        </small>
-                                    @endif
+{{--                                    @if(isset($article->seo))--}}
+{{--                                        <small style="display: block">--}}
+{{--                                            <a @if($article->active) target="_blank" @else style="color: grey; opacity: .75" @endif href="@if($article->active){{url()->to('')}}{{$article->seo->url}}@else#@endif">--}}
+{{--                                                {{str_replace(['https://', 'http://'], '', url()->to(''))}}{{$article->seo->url}}--}}
+{{--                                            </a>--}}
+{{--                                        </small>--}}
+{{--                                    @endif--}}
                                 </td>
-                                <td>{!! $article->category->title ?? '' !!}</td>
+{{--                                <td>{!! $article->category->title ?? '' !!}</td>--}}
                                 <td>
                                     <input type="checkbox" class="status-switch" data-source_table="article" data-source_id="{{$article->id}}" {{$article->active ? 'checked' : ''}}>
                                 </td>
