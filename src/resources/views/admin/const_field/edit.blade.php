@@ -48,7 +48,7 @@
 {{--                                    {!! $form->renderFieldGroup('company_country') !!}--}}
 {{--                                </div>--}}
 {{--                            </div>--}}
-                            {!! $form->renderFieldGroup('company_nip') !!}
+{{--                            {!! $form->renderFieldGroup('company_nip') !!}--}}
 {{--                            {!! $form->renderFieldGroup('company_krs') !!}--}}
                         </div>
                     </div>
@@ -65,7 +65,7 @@
 {{--                            {!! $form->renderFieldGroup('email2') !!}--}}
                             {!! $form->renderFieldGroup('contact_form_email') !!}
 {{--                            {!! $form->renderFieldGroup('google_map') !!}--}}
-                            {!! $form->renderFieldGroup('google_map_iframe') !!}
+{{--                            {!! $form->renderFieldGroup('google_map_iframe') !!}--}}
                         </div>
                     </div>
                 </div>
