@@ -52,20 +52,48 @@
 </section>
 @push('scripts.body.bottom')
     <script>
-        $(document).ready(function () {
-            $('#rotator{{$rotator->id}}').owlCarousel({
-                items: 1,
+        if (('.hero-slider').length) {
+            var testimonial_slider = new Swiper(".hero-slider", {
                 loop: true,
-                autoplay: true,
-                autoplayTimeout: {{$rotator->time ?? 3000}},
-                autoplaySpeed: {{$rotator->speed ?? 500}},
-                nav: {{$rotator->arrows ? 'true' : 'false'}},
-                navText: ['❰', '❱'],
-                dots: {{$rotator->pager ? 'true' : 'false'}},
-                animateOut: 'fadeOut',
-                animateIn: 'fadeIn',
-                smartSpeed: 450
+                slidesPerView: 1,
+                spaceBetween: 100,
+                speed: {{$rotator->speed ?? 500}},
+                watchSlidesProgress: true,
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true,
+                },
+                navigation: {
+                    prevEl: ".testimonial-button-prev",
+                    nextEl: ".testimonial-button-next",
+                },
+                autoplay: {
+                    delay: {{$rotator->time ?? 3000}},
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.testimonial-pagination',
+                    type: 'bullets',
+                    clickable: true
+                },
+                breakpoints: {
+                    576: {
+                        slidesPerView:1,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                    },
+                    992: {
+                        slidesPerView: 1,
+                    },
+                    1201: {
+                        slidesPerView: 1,
+                    },
+                    1367: {
+                        slidesPerView: 1,
+                    },
+                }
             });
-        });
+        }
     </script>
 @endpush

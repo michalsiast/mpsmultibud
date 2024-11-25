@@ -148,42 +148,7 @@
       }
     });
   }
-    if (('.hero-slider').length) {
-        var testimonial_slider = new Swiper(".hero-slider", {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 100,
-            speed: 1800,
-            watchSlidesProgress: true,
-            navigation: {
-                prevEl: ".testimonial-button-prev",
-                nextEl: ".testimonial-button-next",
-            },
-            pagination: {
-                el: '.testimonial-pagination',
-                type: 'bullets',
-                clickable: true
-            },
-            breakpoints: {
-                // when window width is >= px
-                576: {
-                    slidesPerView:1,
-                },
-                768: {
-                    slidesPerView: 1,
-                },
-                992: {
-                    slidesPerView: 1,
-                },
-                1201: {
-                    slidesPerView: 1,
-                },
-                1367: {
-                    slidesPerView: 1,
-                },
-            }
-        });
-    }
+
 
   // wow js activation
   new WOW().init();
