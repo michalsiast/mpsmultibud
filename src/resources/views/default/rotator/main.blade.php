@@ -59,10 +59,7 @@
                 spaceBetween: 100,
                 speed: {{$rotator->speed ?? 500}},
                 watchSlidesProgress: true,
-                effect: 'fade',
-                fadeEffect: {
-                    crossFade: true,
-                },
+             
                 navigation: {
                     prevEl: ".testimonial-button-prev",
                     nextEl: ".testimonial-button-next",
