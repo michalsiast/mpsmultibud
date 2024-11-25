@@ -3775,7 +3775,7 @@ padding-top: 0px!important;
   height: 70px;
 }
 .sticky .main-menu li a {
-  padding: 27px 15px;
+  padding: 27px 10px;
 }
 
 /* header top area style  */
@@ -5529,6 +5529,7 @@ margin-inline: auto;
 .blog-area .blog {
   border: 1px solid var(--primary);
   border-radius: 20px;
+    background-color: #f4f4f4;
   padding: 30px 30px;
   display: grid;
   gap: 20px 30px;
@@ -6427,6 +6428,13 @@ margin-inline: auto;
 }
 .contact-area .submit-btn {
   margin-top: 20px;
+}
+
+.header-main.header-sticky.sticky{
+    padding: 10px 0px;
+}
+.header-main.header-sticky{
+    background-color: #f4f4f4;
 }
 .contact-area .contact-box {
   border: 1px solid var(--primary);
