@@ -27,6 +27,8 @@ abstract class PageType extends Enum
             'title_why_us' => ['head', 'Tytuł - Dlaczego my'],
             'subtitle_specializations' => ['head', 'Podtytuł - Specjalizacje'],
             'header_specializations' => ['head', 'Nagłówek - Specjalizacje'],
+            'subtitle_partner' => ['head', 'Podtytuł - Partnerzy'],
+            'header_partner' => ['head', 'Nagłówek - Partnerzy'],
         ]
     ];
     const PAGE_SHOW = [

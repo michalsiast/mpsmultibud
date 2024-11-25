@@ -83,4 +83,43 @@
         </div>
     </div>
 </section>
+<section class="testimonial-area">
+    <div class="container ">
+       <div class="section-spacing">
+           <div class="section-header wow fadeInUp" data-wow-delay=".3s">
+               <div class="section-title-wrapper">
+                   @if(!empty($fields->subtitle_partner))
+                       <div class="subtitle-wrapper">
+                           <span class="section-subtitle">{{$fields->subtitle_partner}}</span>
+                       </div>
+                   @endif
+
+                   @if(!empty($fields->header_partner))
+                       <div class="title-wrapper">
+                           <h2 class="section-title">{{$fields->header_partner}}</h2>
+                       </div>
+                   @endif
+               </div>
+           </div>
+           <div class="testimonial-area-inner section-spacing-top">
+               <div class="testimonial-wrapper-box wow fadeInUp" data-wow-delay=".3s">
+                   <div class="testimonial-wrapper">
+                       @include('default.realization.home')
+                       <div class="nav-wrapper">
+                           <div class="testimonial-button-prev">
+                               <i class="fa-solid fa-arrow-left"></i>
+                           </div>
+                           <div class="testimonial-button-next">
+                               <i class="fa-solid fa-arrow-right"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="pagination-wrapper d-lg-none">
+                       <div class="testimonial-pagination"></div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+</section>
 @endsection

@@ -23,7 +23,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/swiper-bundle.min.css')}}">
@@ -126,7 +127,7 @@
                         <img src="{{asset('images/logo.png')}}" class="normal-logo" alt="Site Logo">
                     </a>
                 </div>
-                <div class="header__nav pos-center">
+                <div class="header__nav">
                     <nav class="main-menu">
                         @include('default.nav_item.main', ['name' => 'main'])
                     </nav>
@@ -189,7 +190,8 @@
                             <div class="footer-widget-box">
                                 <h2 class="title">Przydatne linki</h2>
                                 <ul class="footer-nav-list">
-                                    <li><a href="/kontakt"><i class="fa-solid fa-angle-right"></i> Kontakt</a></li>
+                                    <li><a href="{{route('contact.show')}}"><i class="fa-solid fa-angle-right"></i> Kontakt</a></li>
+                                    @include('default.offer.home2')
                                 </ul>
                             </div>
                         </div>
@@ -223,6 +225,7 @@
 <script src="{{asset('js/wow.min.js')}}"></script>
 <script src="{{asset('js/backToTop.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 @stack('scripts.body.bottom')
 </body>

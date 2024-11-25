@@ -131,7 +131,7 @@ return [
 
 
     'realization.singular' => 'Realizacja',
-    'realization.plural' => 'Realizacje',
+    'realization.plural' => 'Partnerzy',
     'realization.title' => 'Tytuł',
     'realization.lead' => 'Wprowadzenie',
     'realization.text' => 'Tekst',

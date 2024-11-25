@@ -91,20 +91,25 @@ return [
             'realization' => [
                 'label' => 'admin.realization.plural',
                 'icon' => 'bookmark',
-                'route_name' => '',
-                'items' => [
-                    'realization' => [
-                        'label' => 'admin.realization.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.realization.index',
-                    ],
-                    'realization_category' => [
-                        'label' => 'admin.realization_category.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.realization_category.index',
-                    ],
-                ]
+                'route_name' => 'admin.realization.index',
             ],
+//            'realization' => [
+//                'label' => 'admin.realization.plural',
+//                'icon' => 'bookmark',
+//                'route_name' => '',
+//                'items' => [
+//                    'realization' => [
+//                        'label' => 'admin.realization.plural',
+//                        'icon' => 'arrow-up-left',
+//                        'route_name' => 'admin.realization.index',
+//                    ],
+//                    'realization_category' => [
+//                        'label' => 'admin.realization_category.plural',
+//                        'icon' => 'arrow-up-left',
+//                        'route_name' => 'admin.realization_category.index',
+//                    ],
+//                ]
+//            ],
         ]
     ],
     [

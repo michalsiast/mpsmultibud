@@ -2,15 +2,15 @@
 ==================== JS INDEX ======================
 ****************************************************
 
-// sticky header 
+// sticky header
 // Smooth active
 // Preloader
 // Side Info Js
-// meanmenu activation 
+// meanmenu activation
 // Register GSAP Plugins
 // Counter active
 // testimonial slider
-// wow js activation 
+// wow js activation
 
 
 ****************************************************/
@@ -19,7 +19,7 @@
   "use strict";
 
 
-  // sticky header 
+  // sticky header
   let header = document.querySelector('.header-sticky');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 150) {
@@ -70,7 +70,7 @@
   });
 
 
-  // meanmenu activation 
+  // meanmenu activation
   $('.main-menu').meanmenu({
     meanScreenWidth: "1199",
     meanMenuContainer: '.mobile-menu',
@@ -114,8 +114,8 @@
   // testimonial slider
   if (('.testimonial-slider').length) {
     var testimonial_slider = new Swiper(".testimonial-slider", {
-      loop: false,
-      slidesPerView: 1,
+      loop: true,
+      slidesPerView: 4,
       spaceBetween: 100,
       speed: 1800,
       watchSlidesProgress: true,
@@ -131,25 +131,61 @@
       breakpoints: {
         // when window width is >= px
         576: {
-          slidesPerView: 1,
+          slidesPerView:1,
         },
         768: {
-          slidesPerView: 1,
+          slidesPerView: 2,
         },
         992: {
-          slidesPerView: 1,
+          slidesPerView: 3,
         },
         1201: {
-          slidesPerView: 1,
+          slidesPerView: 4,
         },
         1367: {
-          slidesPerView: 1,
+          slidesPerView: 4,
         },
       }
     });
   }
+    if (('.hero-slider').length) {
+        var testimonial_slider = new Swiper(".hero-slider", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 100,
+            speed: 1800,
+            watchSlidesProgress: true,
+            navigation: {
+                prevEl: ".testimonial-button-prev",
+                nextEl: ".testimonial-button-next",
+            },
+            pagination: {
+                el: '.testimonial-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            breakpoints: {
+                // when window width is >= px
+                576: {
+                    slidesPerView:1,
+                },
+                768: {
+                    slidesPerView: 1,
+                },
+                992: {
+                    slidesPerView: 1,
+                },
+                1201: {
+                    slidesPerView: 1,
+                },
+                1367: {
+                    slidesPerView: 1,
+                },
+            }
+        });
+    }
 
-  // wow js activation 
+  // wow js activation
   new WOW().init();
 
 })(jQuery);
