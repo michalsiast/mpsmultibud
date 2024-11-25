@@ -11,7 +11,7 @@
             <div class="invalid-feedback"></div>
         </div>
         <div class="contact-formfield">
-            <input id="email" type="email" name="email" placeholder="Email *" class="form-control" required>
+            <input id="phone" type="text" name="phone" placeholder="Telefon *" class="form-control" required>
             <div class="invalid-feedback"></div>
         </div>
         <div class="contact-formfield messages">
