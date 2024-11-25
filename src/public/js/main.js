@@ -119,6 +119,10 @@
       spaceBetween: 100,
       speed: 1800,
       watchSlidesProgress: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
       navigation: {
         prevEl: ".testimonial-button-prev",
         nextEl: ".testimonial-button-next",

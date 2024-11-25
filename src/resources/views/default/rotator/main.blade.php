@@ -59,7 +59,6 @@
                 spaceBetween: 100,
                 speed: {{$rotator->speed ?? 500}},
                 watchSlidesProgress: true,
-             
                 navigation: {
                     prevEl: ".testimonial-button-prev",
                     nextEl: ".testimonial-button-next",
