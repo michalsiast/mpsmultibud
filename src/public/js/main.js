@@ -115,7 +115,7 @@
   if (('.testimonial-slider').length) {
     var testimonial_slider = new Swiper(".testimonial-slider", {
       loop: true,
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 100,
       speed: 1800,
       watchSlidesProgress: true,
