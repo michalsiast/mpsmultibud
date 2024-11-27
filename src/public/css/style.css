@@ -6478,19 +6478,19 @@ margin-inline: auto;
   margin-top: 40px;
 }
 .contact-area .contact-meta {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
 }
 @media only screen and (max-width: 1199px) {
-  .contact-area .contact-meta {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .contact-area .contact-meta {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media only screen and (max-width: 991px) {
-  .contact-area .contact-meta {
-    grid-template-columns: repeat(1, 1fr);
-  }
+    .contact-area .contact-meta {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 .contact-area .contact-item {
   border: 1px solid var(--primary);
