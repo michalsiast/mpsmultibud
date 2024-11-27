@@ -36,6 +36,15 @@
                                 <p class="text"><a href="mailto:{{getConstField('email')}}">{{getConstField('email')}}</a></p>
                             </div>
                         </div>
+                        <div class="contact-item wow fadeInUp" data-wow-delay=".7s">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="content">
+                                <h3 class="title">Adres</h3>
+                                <p class="text"><a href="mailto:{{getConstField('email')}}">{{getConstField('company_address')}}, {{getConstField('company_post_code')}}, {{getConstField('company_city')}}</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
