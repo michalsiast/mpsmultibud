@@ -48,7 +48,7 @@
 {{--                                    {!! $form->renderFieldGroup('company_country') !!}--}}
 {{--                                </div>--}}
                             </div>
-{{--                            {!! $form->renderFieldGroup('company_nip') !!}--}}
+                            {!! $form->renderFieldGroup('company_nip') !!}
 {{--                            {!! $form->renderFieldGroup('company_krs') !!}--}}
                         </div>
                     </div>
