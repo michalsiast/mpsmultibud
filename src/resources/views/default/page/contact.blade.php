@@ -42,7 +42,7 @@
                             </div>
                             <div class="content">
                                 <h3 class="title">Adres</h3>
-                                <p class="text"><a target="_blank" href="{{getConstField('google_map')}}">{{getConstField('company_address')}}, {{getConstField('company_post_code')}}, {{getConstField('company_city')}}</a></p>
+                                <p class="text"><a target="_blank" href="{{getConstField('google_map')}}">{{getConstField('company_address')}},<br> {{getConstField('company_post_code')}}, {{getConstField('company_city')}}</a></p>
                                 <p>NIP: {{getConstField('company_nip')}}</p>
                             </div>
                         </div>
