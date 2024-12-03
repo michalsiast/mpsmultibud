@@ -2,7 +2,7 @@
 @section('content')
     @include('default.subheader', ['pageName' => $page->name])
 
-    <div class="gallery">
+    <div class="gallery mt-5 mb-5">
         <div class="container">
             <div class="row">
                 @foreach($page->gallery->items as $item)
