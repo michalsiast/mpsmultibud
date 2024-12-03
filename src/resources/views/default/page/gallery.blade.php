@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 @foreach($page->gallery->items as $item)
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 mt-2">
                         <a href="{{renderImage($item->url, 1920, 1080, 'resize')}}">
                             <img style="width: 100%" src="{{renderImage($item->url, 600, 600, 'fit')}}" alt="">
                         </a>
